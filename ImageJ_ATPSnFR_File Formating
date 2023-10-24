@@ -3,9 +3,7 @@ from ij.plugin.filter import PlugInFilterRunner
 import os
 import glob
 
-#import sys
-#sys.path.append("C:\\Users\\cmp2010\\Dropbox\\LABORATORY\\ImageJ\\")  # the folder containing Hello_.py
-#from Slice_Keeper import Hello
+
 #################
 ###################################################################
 Sensor = "SyniATPsf-HALO"
