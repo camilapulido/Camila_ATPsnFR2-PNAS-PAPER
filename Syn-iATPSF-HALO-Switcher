@@ -9,8 +9,6 @@ from ij.plugin.frame import RoiManager
 ###################################################################
 xVal= 1600 ##1250 ##2900 ## x value to click in Get Avg
 yVal = 229 ##240
-#waiting = 1000000
-#waitmore =10000000
 
 Waitfor = 1  # in seconds
 ###################################################################
@@ -27,8 +25,8 @@ step = 0    ## 0 = Glucose; 1= Test Solution
 
 ##########################
 
-SolList = ["KAG0TTX"]
-SolNo =[7] #
+SolList = [""]
+SolNo =[] #
 #SolNo =[NoGlucose,NoTestSolution,NoWashSol]
 
 SensorType = ["Halo650x","iATPsf"]
