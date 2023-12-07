@@ -90,14 +90,10 @@ if Calibration == 0:
 			IJ.run(imp, "Z Project...", "start="+str(start)+" stop="+str(stop)+" projection=[Average Intensity]") ### z project to get average of the stack
 			AVG= IJ.getImage()
 	
-			##for x in range(0,waiting):
-			##	x=x
 			time.sleep(Waitfor)
 			
 			IJ.run("IJ Robot", "order=Left_Click x_point="+str(xVal)+" y_point=190 delay=185 keypress=[]") ## RECENTER
 			
-			#for x in range(0,waiting):
-			#	x=x
 			time.sleep(Waitfor)
 			
 			AVG.close()
@@ -106,13 +102,9 @@ if Calibration == 0:
 			imp = IJ.getImage()
 			
 			time.sleep(Waitfor)
-			##for x in range(0,waiting):
-			##	x=x
-	
+				
 			IJ.run("IJ Robot", "order=Left_Click x_point="+str(xVal)+" y_point="+str(yVal)+" delay=150 keypress=[]") ## GET AVG
 	
-			#for x in range(0,waitmore):
-			#	x=x
 			time.sleep(Waitfor)
 					
 			Results2 = ResultsTable.getActiveTable()
@@ -128,8 +120,6 @@ if Calibration == 0:
 					ResultsHALOBtns.addValue(str(head), Column[frame])
 					
 			####### iATPsf ##############
-			#for x in range(0,waiting):
-			#	x=x
 			time.sleep(Waitfor)
 					
 			imp = IJ.selectWindow(iATPName)
@@ -137,8 +127,6 @@ if Calibration == 0:
 	
 			IJ.run("IJ Robot", "order=Left_Click x_point="+str(xVal)+" y_point="+str(yVal)+" delay=150 keypress=[]") ## GET AVG
 	
-			#for x in range(0,waitmore):
-			#	x=x
 			time.sleep(Waitfor)
 				
 			Results2 = ResultsTable.getActiveTable()
