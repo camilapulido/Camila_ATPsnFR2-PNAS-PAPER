@@ -33,8 +33,8 @@ SensorType = ["Halo650x","iATPsf"]
 ######################################################################
 window = 50   ## how many frames to AVG in the center
 
-FolderOUT = "C:\\...\\"+Culture+CRE+"\\"+Sensor+"\\2023\\"+str(Date)+"_C"+str(Cell)+"\\"
-FolderIN = "C:\\...\\DATA\\"+Culture+CRE+"\\"+Sensor+"\\2023\\"+str(Date)+"\\C"+str(Cell)+"\\FormatedFiles\\"
+FolderOUT = "C:\\ANALYSIS\\"+Culture+CRE+"\\"+Sensor+"\\2023\\"+str(Date)+"_C"+str(Cell)+"\\"
+FolderIN = "C:\\DATA\\"+Culture+CRE+"\\"+Sensor+"\\2023\\"+str(Date)+"\\C"+str(Cell)+"\\FormatedFiles\\"
 
 if not os.path.exists(FolderOUT):
     os.makedirs(FolderOUT)
